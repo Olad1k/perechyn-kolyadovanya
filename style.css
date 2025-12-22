@@ -29,8 +29,10 @@ header p {
   font-size: 26px;
   color: #5d4037;
   margin-top: 20px;
-  font-style: italic;
+  font-style: normal;   /* забрали сьме курзів */
+  font-weight: 500;     /* зробили сьме текст грубше */
 }
+
 
 /* Сїтка одкликовань */
 main {
