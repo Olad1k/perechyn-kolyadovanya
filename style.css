@@ -1,9 +1,6 @@
-/* Общой штімованя */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Playfair+Display:wght@700&display=swap');
+
+* { margin:0; padding:0; box-sizing:border-box; }
 
 body {
   font-family: 'Alegreya', serif;
@@ -12,68 +9,79 @@ body {
   min-height: 100vh;
 }
 
-/* Калап */
-header {
-  text-align: center;
-  padding: 80px 20px 40px;
-}
-
-header h1 {
+h1, h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 58px;
-  color: #4e342e;
+  color: #c41e3a;
+  text-align: center;
 }
 
-header p {
-  font-family: 'Alegreya', serif;
-  font-size: 26px;
-  color: #5d4037;
-  margin-top: 20px;
-  font-style: normal;   /* забрали сьме курзів */
-  font-weight: 500;     /* зробили сьме текст грубше */
+header {
+  padding: 80px 20px 40px;
+  text-align: center;
+  background: linear-gradient(to bottom, #fffef7, #fdf2e6);
 }
 
+h1 { font-size: 48px; margin-bottom: 10px; }
+.back-link { 
+  font-size: 19px; 
+  color: #c41e3a; 
+  text-decoration: none;
+}
+.back-link:hover { text-decoration: underline; }
 
-/* Сїтка одкликовань */
-main {
-  padding: 0 20px 60px;
-  display: flex;
-  justify-content: center;
+main { flex: 1; }
+
+.lyrics {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  padding: 40px 20px;
+  font-size: 23px;
+  white-space: pre-wrap;
+  text-align: center;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
 }
 
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: #8d6e63;
+  font-size: 16px;
+}
+
+/* головна сторунка */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  max-width: 900px;
-  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
 .grid a {
   display: block;
-  padding: 16px 20px;
-  text-align: center;
+  background: #c41e3a;
+  color: white;
   text-decoration: none;
-  background: rgba(255, 248, 225, 0.9);
-  border-radius: 12px;
-  color: #4e342e;
-  font-size: 18px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 40px 20px;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.3s;
+  box-shadow: 0 6px 15px rgba(196,30,58,0.25);
 }
 
 .grid a:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.16);
-  background: #ffe0b2;
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(196,30,58,0.35);
+  background: #a1172e;
 }
 
-/* Півниця */
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  color: #5d4037;
-  border-top: 1px solid rgba(121, 85, 72, 0.2);
-  background: rgba(255, 253, 231, 0.8);
+@media (max-width: 640px) {
+  h1 { font-size: 40px; }
+  .lyrics { font-size: 21px; padding: 30px 15px; }
+  .grid a { font-size: 20px; padding: 30px 15px; }
 }
