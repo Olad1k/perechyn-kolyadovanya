@@ -1,0 +1,76 @@
+/* Общой штімованя */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Alegreya', serif;
+  background: linear-gradient(135deg, #fbe9e7, #ffecb3);
+  color: #3e2723;
+  min-height: 100vh;
+}
+
+/* Калап */
+header {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  color: #4e342e;
+}
+
+header p {
+  font-size: 22px;
+  color: #6d4c41;
+  margin-top: 16px;
+  font-style: italic;
+}
+
+/* Сїтка одкликовань */
+main {
+  padding: 0 20px 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.grid a {
+  display: block;
+  padding: 16px 20px;
+  text-align: center;
+  text-decoration: none;
+  background: rgba(255, 248, 225, 0.9);
+  border-radius: 12px;
+  color: #4e342e;
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.grid a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.16);
+  background: #ffe0b2;
+}
+
+/* Півниця */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #5d4037;
+  border-top: 1px solid rgba(121, 85, 72, 0.2);
+  background: rgba(255, 253, 231, 0.8);
+}
