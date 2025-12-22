@@ -4,9 +4,12 @@
 
 body {
   font-family: 'Alegreya', serif;
-  background: linear-gradient(135deg, #fbe9e7, #ffecb3);
-  color: #3e2723;
+  background-color: #fffef7;
+  color: #2c1a0d;
+  line-height: 1.8;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1, h2 {
