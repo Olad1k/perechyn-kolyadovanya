@@ -53,7 +53,7 @@ footer {
   font-size: 16px;
 }
 
-/* головна сторунка */
+/* ГОЛОВНА СТОРУНКА */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
